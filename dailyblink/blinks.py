@@ -147,7 +147,8 @@ def main():
         "german": "de",
     }
 
-    base_directory = pathlib.Path(pathlib.Path.home(), "Musik", "blinks")
+    # base_directory = pathlib.Path(pathlib.Path.home(), "Musik", "blinks")
+    base_directory = pathlib.Path.cwd()
 
     for language, language_code in languages.items():
         blink_info = get_daily_blink_info(language=language_code)

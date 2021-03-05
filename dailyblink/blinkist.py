@@ -289,7 +289,8 @@ def main():
         print(e)
         sys.exit(0)
 
-    base_directory = pathlib.Path(pathlib.Path.home(), "Musik", "all_blinks")
+    # base_directory = pathlib.Path(pathlib.Path.home(), "Musik", "all_blinks")
+    base_directory = pathlib.Path.cwd()
     pathlib.Path(base_directory, "downloaded_urls.yml")
 
     with open("downloaded_urls.yml", "r+") as outfile:

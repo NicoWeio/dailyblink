@@ -21,11 +21,13 @@ pip install --user git+https://github.com/ptrstn/dailyblink
 dailyblink
 ```
 
-All blinks are saved in your home directory under ```Musik/blinks```. One folder per book.
+All blinks are saved in the current working directory. One folder per book.
 
 Example:
 
 ```bash
+$ pwd
+/home/.../Musik/DailyBlinks
 $ dailyblink
 Downloading the free daily Blinks...
 
@@ -59,5 +61,5 @@ Saving audio track #8 - Wir brauchen einen Feminismus, der sich ...
 Saving audio track #9 - Die britische Politik ignoriert den Rass...
 Saving audio track #10 - Zusammenfassung...
 
-All blinks were saved under ~/Musik/blinks
+All blinks were saved under /home/.../Musik/DailyBlinks
 ```
